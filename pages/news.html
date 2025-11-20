@@ -1,64 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>VL_PLAY | Новости</title>
    <link rel="stylesheet" href="../css/styles.css">
+   <link rel="stylesheet" href="../css/custom.css">
 </head>
 <body>
-   <header class="header">
-      <ul class="header__menu">
-         <li class="header__item"><a href="../index.html" class="header__link">Главная</a></li>
-         <li class="header__item"><a href="./news.html" class="header__link">Новости</a></li>
-         <li class="header__item"><a href="./practices.html" class="header__link">Практики</a></li>
-         <li class="header__item"><a href="./goods.html" class="header__link">Товары</a></li>
-         <li class="header__item"><a href="./contacts.html" class="header__link">Контакты</a></li>
-      </ul >
-   </header>
+   <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 class="site-title">VL_PLAY</h1>
+                    <p class="site-subtitle">Студент разработчик</p>
+                </div>
+                <div class="header-badge">
+                    <span class="badge">ЭФБО-05-24</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-   <main class="content">
-      <h1 class="content__title">Новости</h1>
-      <div class="news">
-         <section class="news-info section">
-            <h1 class="news-info__title">
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        <span class="nav-icon">🏠</span>Главная
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./news.html">
+                        <span class="nav-icon">📰</span>Новости
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./practices.html">
+                        <span class="nav-icon">💻</span>Практики
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./goods.html">
+                        <span class="nav-icon">🛒</span>Товары
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacts.html">
+                        <span class="nav-icon">📞</span>Контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+   <main class="main-content container">
+      <h1 class="page-title">Новости</h1>
+      <div class="news-section">
+         <section class="news-card">
+            <h2 class="news-title">
                Team Spirit одержала победу на The International 2024
-            </h1>
-            <p class="news-info__description">
+            </h2>
+            <p class="news-description">
                Легендарный клуб по Dota 2 во второй раз завоевал главный трофей мира и призовой фонд в 15 миллионов долларов.
             </p>
-            <p class="news-info__data">
+            <p class="news-date">
                cybersport.mail, 21.09.2024
             </p>
          </section>
-         <section class="news-info section">
-            <h1 class="news-info__title">
+         <section class="news-card">
+            <h2 class="news-title">
                s1mple вернулся в состав Natus Vincere
-            </h1>
-            <p class="news-info__description">
+            </h2>
+            <p class="news-description">
                Лучший игрок в истории CS:2 завершил свой отпуск и будет выступать на ближайшем мейджоре в Стокгольме.
             </p>
-            <p class="news-info__data">
+            <p class="news-date">
                hltv.org, 03.10.2024
             </p>
          </section>
-         <section class="news-info section">
-            <h1 class="news-info__title">
+         <section class="news-card">
+            <h2 class="news-title">
                Новый сезон киберспортивной лиги LEC стартует в обновленном формате
-            </h1>
-            <p class="news-info__description">
+            </h2>
+            <p class="news-description">
                Организаторы анонсировали увеличение количества участников и полную смену сетки турнира.
             </p>
-            <p class="news-info__data">
+            <p class="news-date">
                escorenews.com, 18.10.2024
             </p>
          </section>
       </div>
    </main>
 
-   <footer class="footer">
-      <p class="footer__text">© 2025-2026 гг. Все права защищены</p>
-      <p class="footer__text">Ссылки на материалы: <a href="https://github.com/astafiev-rustam/frontend-and-backend-development/tree/practice-1-8" class="footer__link">GitHub</a>, <a href="https://htmlacademy.ru/courses/299" class="footer__link">HTML Academy</a></p>
-   </footer>
+   <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025-2026. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="./contacts.html" class="footer-link">Контакты</a>
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

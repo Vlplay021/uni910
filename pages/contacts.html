@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VL_PLAY | Контакты</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/custom.css">
     <style>
         /* Стили для модального окна */
         dialog::backdrop {
@@ -134,6 +135,48 @@
             }
         }
 
+        /* Контактная информация */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-item {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 100%;
+            text-align: center;
+            border-left: 5px solid var(--color-accent);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item h3 {
+            margin: 0 0 1rem 0;
+            color: var(--color-main);
+            font-size: 1.25rem;
+        }
+
+        .contact-item p {
+            margin: 0.5rem 0;
+            color: var(--color-text);
+        }
+
+        .contact-item a {
+            color: var(--color-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--color-accent);
+            text-decoration: underline;
+        }
+
         /* Адаптивность */
         @media (max-width: 600px) {
             dialog {
@@ -152,43 +195,86 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <ul class="header__menu">
-            <li class="header__item"><a href="../index.html" class="header__link">Главная</a></li>
-            <li class="header__item"><a href="./news.html" class="header__link">Новости</a></li>
-            <li class="header__item"><a href="./practices.html" class="header__link">Практики</a></li>
-            <li class="header__item"><a href="./goods.html" class="header__link">Товары</a></li>
-            <li class="header__item"><a href="./contacts.html" class="header__link">Контакты</a></li>
-        </ul>
+    <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 class="site-title">VL_PLAY</h1>
+                    <p class="site-subtitle">Студент разработчик</p>
+                </div>
+                <div class="header-badge">
+                    <span class="badge">ЭФБО-05-24</span>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main class="content">
-        <header class="content__header">
-            <h2 class="content__title">Контакты</h2>
-        </header>
-        <div class="content__contact">
-            <div class="contact-block">
-                <h3 class="contact-block__title">Электронная почта</h3>
-                <p class="contact-block__item"><a href="mailto:?????????" class="contact-block__link">?????????</a></p>
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        <span class="nav-icon">🏠</span>Главная
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./news.html">
+                        <span class="nav-icon">📰</span>Новости
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./practices.html">
+                        <span class="nav-icon">💻</span>Практики
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./goods.html">
+                        <span class="nav-icon">🛒</span>Товары
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./contacts.html">
+                        <span class="nav-icon">📞</span>Контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content container">
+        <h1 class="page-title">Контакты</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Электронная почта</h3>
+                <p><a href="mailto:?????????">?????????</a></p>
             </div>
-            <div class="contact-block">
-                <h3 class="contact-block__title">Адрес</h3>
-                <p class="contact-block__item">ул. Примерная д.15 ст.1 кв 213</p>
+            <div class="contact-item">
+                <h3>Адрес</h3>
+                <p>ул. Примерная д.15 ст.1 кв 213</p>
             </div>
-            <div class="contact-block">
-                <h3 class="contact-block__title">Телефон</h3>
+            <div class="contact-item">
+                <h3>Телефон</h3>
                 <a href="tel:+79005399054" class="contact-block__button">Позвони мне</a>
             </div>
-            <div class="contact-block">
-                <h3 class="contact-block__title">Обратная связь</h3>
+            <div class="contact-item">
+                <h3>Обратная связь</h3>
                 <button class="contact-block__button" onclick="contactModal.showModal()">Связаться с нами</button>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
-        <p class="footer__text">© 2025-2026 гг. Все права защищены</p>
-        <p class="footer__text">Ссылки на материалы: <a href="https://github.com/astafiev-rustam/frontend-and-backend-development/tree/practice-1-8" class="footer__link">GitHub</a>, <a href="https://htmlacademy.ru/courses/299" class="footer__link">HTML Academy</a></p>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025-2026. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="./contacts.html" class="footer-link">Контакты</a>
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Модальное окно для формы обратной связи -->
@@ -229,9 +315,7 @@
                 </div>
 
                 <div class="modal-actions">
-                    <!-- Исправленная кнопка отмены -->
                     <button type="button" class="btn btn-secondary" onclick="contactModal.close()">Отмена</button>
-                    <!-- Кнопка отправки с обработкой через JavaScript -->
                     <button type="button" class="btn btn-primary" onclick="submitForm()">Отправить</button>
                 </div>
             </form>

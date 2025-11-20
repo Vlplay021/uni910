@@ -1,29 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>VL_PLAY | Практика</title>
    <link rel="stylesheet" href="../css/styles.css">
+   <link rel="stylesheet" href="../css/custom.css">
 </head>
 <body>
-   <header class="header">
-      <ul class="header__menu">
-         <li class="header__item"><a href="../index.html" class="header__link">Главная</a></li>
-         <li class="header__item"><a href="./news.html" class="header__link">Новости</a></li>
-         <li class="header__item"><a href="./practices.html" class="header__link">Практики</a></li>
-         <li class="header__item"><a href="./goods.html" class="header__link">Товары</a></li>
-         <li class="header__item"><a href="./contacts.html" class="header__link">Контакты</a></li>
-      </ul >
-   </header>
+   <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 class="site-title">VL_PLAY</h1>
+                    <p class="site-subtitle">Студент разработчик</p>
+                </div>
+                <div class="header-badge">
+                    <span class="badge">ЭФБО-05-24</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-   <main class="content">
-      <h1 class="content__title">Практики</h1>
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        <span class="nav-icon">🏠</span>Главная
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./news.html">
+                        <span class="nav-icon">📰</span>Новости
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./practices.html">
+                        <span class="nav-icon">💻</span>Практики
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./goods.html">
+                        <span class="nav-icon">🛒</span>Товары
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacts.html">
+                        <span class="nav-icon">📞</span>Контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+   <main class="main-content container">
+      <h1 class="page-title">Практики</h1>
+      <div class="coming-soon">
+         <p>Раздел находится в разработке. Скоро здесь появятся практические работы и проекты.</p>
+      </div>
    </main>
 
-   <footer class="footer">
-      <p class="footer__text">© 2025-2026 гг. Все права защищены</p>
-      <p class="footer__text">Ссылки на материалы: <a href="https://github.com/astafiev-rustam/frontend-and-backend-development/tree/practice-1-8" class="footer__link">GitHub</a>, <a href="https://htmlacademy.ru/courses/299" class="footer__link">HTML Academy</a></p>
-   </footer>
+   <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025-2026. Все права защищены.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="./contacts.html" class="footer-link">Контакты</a>
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
